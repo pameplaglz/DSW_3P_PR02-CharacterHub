@@ -1,0 +1,56 @@
+@baseUrl = http://localhost:5050
+
+### 1. Iniciar sesión (obtener token JWT)
+POST {{baseUrl}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "CharacterHub2026!"
+}
+
+### 2. Consultar todos los personajes (reemplaza {{token}} con el JWT obtenido)
+GET {{baseUrl}}/api/personajes
+Authorization: Bearer {{token}}
+
+### 3. Registrar un personaje
+POST {{baseUrl}}/api/personajes
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nombre": "Link",
+  "videojuego": "The Legend of Zelda",
+  "clase": "Espadachín",
+  "nivel": 85,
+  "poder": 920,
+  "disponible": false,
+  "imagenUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Link_of_the_Wild.png"
+}
+
+### 4. Consultar por videojuego
+GET {{baseUrl}}/api/personajes/videojuego/The%20Legend%20of%20Zelda
+Authorization: Bearer {{token}}
+
+### 5. Consultar por nivel mínimo
+GET {{baseUrl}}/api/personajes/nivel/50
+Authorization: Bearer {{token}}
+
+### 6. Actualizar personaje
+PUT {{baseUrl}}/api/personajes/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+  "nombre": "Link",
+  "videojuego": "The Legend of Zelda",
+  "clase": "Héroe del Tiempo",
+  "nivel": 95,
+  "poder": 990,
+  "disponible": true,
+  "imagenUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Link_of_the_Wild.png"
+}
+
+### 7. Eliminar personaje
+DELETE {{baseUrl}}/api/personajes/1
+Authorization: Bearer {{token}}
