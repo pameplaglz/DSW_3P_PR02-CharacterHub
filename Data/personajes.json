@@ -1,0 +1,32 @@
+[
+  {
+    "Id": 1,
+    "Nombre": "Link",
+    "Videojuego": "The Legend of Zelda",
+    "Clase": "Espadachin",
+    "Nivel": 85,
+    "Poder": 920,
+    "Disponible": true,
+    "ImagenUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Link_of_the_Wild.png"
+  },
+  {
+    "Id": 2,
+    "Nombre": "Samus Aran",
+    "Videojuego": "Metroid",
+    "Clase": "Cazarrecompensas",
+    "Nivel": 90,
+    "Poder": 980,
+    "Disponible": true,
+    "ImagenUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Samus_Aran_Metroid_Dread.png"
+  },
+  {
+    "Id": 3,
+    "Nombre": "Hornet",
+    "Videojuego": "Hollow Knight",
+    "Clase": "Centinela",
+    "Nivel": 60,
+    "Poder": 650,
+    "Disponible": true,
+    "ImagenUrl": "https://upload.wikimedia.org/wikipedia/en/0/04/Hollow_Knight_first_cover_art.webp"
+  }
+]
