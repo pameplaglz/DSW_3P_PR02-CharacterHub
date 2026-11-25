@@ -1,9 +1,11 @@
 using CharacterHub.Models;
 using CharacterHub.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CharacterHub.Controllers;
 
+[Authorize]
 [ApiController]
 [Route("api/[controller]")]
 public class PersonajesController : ControllerBase
